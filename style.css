@@ -1,0 +1,84 @@
+@font-face {
+    font-family: 'Lodeh Regular';
+    src: url(Fonts/lodehregular.ttf);
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    left: 100%;
+}
+
+.main {
+    position: fixed;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    font-family: 'Lodeh Regular';
+    transition: transform .3s ease, box-shadow .3s ease, text-decoration .3s ease;
+}
+
+
+button:hover {
+    transform: scale(1.1, 1.1);
+    text-decoration: underline;
+    box-shadow: 0 0 10px 5px rgba(255, 255, 255, .3);
+}
+
+button:active {
+    transition: transform .1s ease, box-shadow .1s ease;
+    transform: scale(1, 1);
+    box-shadow: 0 0 5px 2.5px rgba(255, 255, 255, .3);
+}
+
+.top {
+    position: fixed;
+    display: flex;
+    height: 75px;
+    width: 100%;
+    z-index: 1;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    border-bottom: .01px solid rgba(255, 255, 255, .2);
+    gap: 20px;
+    z-index: 1;
+}
+
+#left {
+    position: fixed;
+    margin: 0;
+    height: 100%;
+    width: 50%;
+    background-color: black;
+}
+
+#right {
+    position: fixed;
+    margin: 0;
+    margin-left: 50%;
+    height: 100%;
+    width: 50%;
+    background-color: white;
+}
+
+/* #title {
+    visibility: hidden;
+    position: fixed;
+    margin: 0;
+    top: 50%;
+    left: 600px;
+    color: white;
+    font-size: 150px;
+    font-family: 'Lodeh Regular';
+    z-index: 2;
+} */
